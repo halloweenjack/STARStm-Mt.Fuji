@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+body {
+  margin: 0;
+  background-image: radial-gradient(circle, black 0%, #434343 80%) ;
+  color: #fff;
+  font-size: 13px;
+  line-height: 24px;
+  overscroll-behavior: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+
+#title {
+  z-index: 9999;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 8.5vw;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  display: block;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  user-select: none;
+  z-index: 9999;
+}
+
+#title-bottom {
+  z-index: 9999;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 4vw;
+  position: fixed;
+  bottom: 75px;
+  right: 50px;
+  display: block;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  user-select: none;
+}
+
+#reload {
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  background: url(ic_undo.svg) no-repeat center center #fff;
+  background-size: 25px 25px;
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  cursor: pointer;
+}
+
+a {
+  color: #8ff;
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 50px -10px;
+  border: 1px solid rgba(127, 255, 255, 0.5);
+  text-align: center;
+  line-height: normal;
+  pointer-events: auto;
+}
+
+.box:hover {
+  border: 1px solid rgba(127, 255, 255, 0.75);
+}
+
+.box .number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 12px;
+  color: rgba(127, 255, 255, 0.75);
+}
+
+.box .photo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 380px;
+  height: 215px;
+  cursor: pointer;
+}
+
+
+.box .symbol {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  right: 0px;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+}
+
+.box .date {
+  position: absolute;
+  bottom: 14px;
+  left: 0px;
+  right: 0px;
+  font-size: 34px;
+  color: rgba(255, 255, 255, 0.75);
+}
